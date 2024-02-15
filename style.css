@@ -1,0 +1,113 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(blue,purple);
+    padding: 10px;
+}
+.TODO-APP{
+   width: 100%;
+   max-width: 540px;
+   background: #fff;
+   margin: 100px auto 20px;
+   padding: 40px 30px 70px;
+   border-radius: 10px;
+   
+}
+/* .TODO-APP img{
+    height: 80px;
+    width: 80px;
+} */
+.TODO-APP h2{
+    color: #a76d20;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.TODO-APP h2 img{
+margin-left: 10px ;
+width: 30px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+     
+     
+}
+.input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 15px;
+    background: orange;
+    cursor: pointer;
+     border-radius: 14px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 15px;
+    user-select: none;
+    cursor: pointer;
+    /* position:  relative; */
+   display: flex;
+   gap: 40px;
+}
+ul li::before{
+    content: "";
+    position: relative;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("uncheck-removebg-preview.png");
+    background-size: cover;
+    background-position: center;
+    top :12px;
+    left: 8px;
+      
+
+}
+ul li.cheked{
+    color: #081212;
+    text-decoration: line-through;
+}
+ul li.cheked::before{
+    background-image: url("uncheck-removebg-preview.png");
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #edeef0;
+}
